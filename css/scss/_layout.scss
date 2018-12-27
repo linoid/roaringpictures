@@ -2070,7 +2070,20 @@ input.searchbox:focus {
 -------------------------------------------------------*/
 
 .section-wrap.intro {
-  padding: 170px 0 150px;
+  padding: 90px 0 150px;
+  position: relative;
+  height: 67rem;
+}
+
+#intro {
+  .container {
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+  }
 }
 
 .intro.style-2 .intro-text p {

@@ -63,8 +63,48 @@ body {
 }
 
 video {
-  height: 100%;
-  width: 100%;
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.tint {
+  &:after {
+    background-color: #f9cd4561;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.reel {
+  border: white solid 1px;
+  padding: 1em;
+  text-transform: uppercase;
+  background-color: #27272775;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: all .5s;
+  &:hover {
+    background: #d6940096;
+    color: white;
+  }
+  &:active, &:focus {
+    color: white;
+  }
 }
 
 body img {
