@@ -122,6 +122,10 @@ video {
   position: absolute;
   top: 0; }
 
+#about-us p {
+  font-size: 2.7rem;
+  line-height: 4.2rem; }
+
 .reel {
   border: white solid 1px;
   padding: 1em;
@@ -136,6 +140,9 @@ video {
     color: white; }
   .reel:active, .reel:focus {
     color: white; }
+
+.entry-content .cta-button {
+  padding: 2rem 0 0; }
 
 body img {
   border: none;
@@ -2669,11 +2676,11 @@ input.searchbox:focus {
 .section-wrap.intro {
   padding: 90px 0 150px;
   position: relative;
-  height: 67rem; }
+  height: 49rem; }
 
 #intro .container {
   position: absolute;
-  top: 25rem;
+  top: 10rem;
   left: 0;
   margin-right: auto;
   margin-left: auto;

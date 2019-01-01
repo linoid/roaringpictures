@@ -89,6 +89,13 @@ video {
   }
 }
 
+#about-us {
+  p {
+    font-size: 2.7rem;
+    line-height: 4.2rem;
+  }
+}
+
 .reel {
   border: white solid 1px;
   padding: 1em;
@@ -104,6 +111,12 @@ video {
   }
   &:active, &:focus {
     color: white;
+  }
+}
+
+.entry-content {
+  .cta-button {
+    padding: 2rem 0 0;
   }
 }
 
