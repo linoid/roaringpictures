@@ -10,7 +10,7 @@
 
 .oh { overflow: hidden; }
 .relative { position: relative; }
-.section-wrap, .section-wrap-mp { padding: 150px 0; overflow: hidden; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.section-wrap, .section-wrap-mp { padding: 90px 0; overflow: hidden; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-repeat: no-repeat; }
 .section-wrap-mp { padding: 100px 0; }
 .color-white { color: #fff !important; }
 .left { float: left; }
@@ -89,6 +89,11 @@ video {
   }
 }
 
+.demo-reel {
+  text-align: center;
+  padding: 2rem 0 0;
+}
+
 #about-us {
   p {
     font-size: 2.7rem;
@@ -161,6 +166,10 @@ p {
 
 .heading {
   margin-bottom: 60px;
+}
+
+.headings {
+  padding: 4rem 0 3rem;
 }
 
 .bottom-line:after {

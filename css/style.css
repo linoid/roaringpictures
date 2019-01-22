@@ -22,7 +22,7 @@
   position: relative; }
 
 .section-wrap, .section-wrap-mp {
-  padding: 150px 0;
+  padding: 90px 0;
   overflow: hidden;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -122,6 +122,10 @@ video {
   position: absolute;
   top: 0; }
 
+.demo-reel {
+  text-align: center;
+  padding: 2rem 0 0; }
+
 #about-us p {
   font-size: 2.7rem;
   line-height: 4.2rem; }
@@ -192,6 +196,9 @@ p {
 
 .heading {
   margin-bottom: 60px; }
+
+.headings {
+  padding: 4rem 0 3rem; }
 
 .bottom-line:after {
   content: "";
@@ -1469,7 +1476,7 @@ p {
 /* From Blog
 -------------------------------------------------------*/
 .blog-col {
-  padding: 0 5px; }
+  padding: 0 5px 1rem; }
   .blog-col h4 {
     font-size: 15px;
     margin-top: 10px;
@@ -2674,9 +2681,9 @@ input.searchbox:focus {
 /* Intro
 -------------------------------------------------------*/
 .section-wrap.intro {
-  padding: 90px 0 150px;
+  padding: 90px 0 0px;
   position: relative;
-  height: 49rem; }
+  height: 39rem; }
 
 #intro .container {
   position: absolute;

@@ -549,7 +549,7 @@
 -------------------------------------------------------*/
 
 .blog-col {
-  padding: 0 5px;
+  padding: 0 5px 1rem;
 
   & h4 {
     font-size: 15px;
@@ -2070,9 +2070,9 @@ input.searchbox:focus {
 -------------------------------------------------------*/
 
 .section-wrap.intro {
-  padding: 90px 0 150px;
+  padding: 90px 0 0px;
   position: relative;
-  height: 49rem;
+  height: 39rem;
 }
 
 #intro {
