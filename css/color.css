@@ -32,13 +32,11 @@ a,
 .navbar-nav > li > a:hover,
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:focus,
-.navbar-nav > .active > a:hover,
-.menu-socials li > a:hover {
+.navbar-nav > .active > a:hover {
 	color: #bfa67a !important;
 }
 
 
-.menu-socials li > a:hover,
 .icon-effect-1 .hi-icon,
 .contact-icon,
 input.searchbox:focus,
@@ -58,6 +56,8 @@ input[type="url"]:focus,
 textarea:focus {
 	border-color: #bfa67a;
 }
+
+.menu-socials li > a:hover { color: #d69400 }
 
 .dropdown-menu {
 	border-top-color: #bfa67a;

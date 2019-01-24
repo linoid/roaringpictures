@@ -3,7 +3,7 @@ $breakpoint: 799px;
 $nav-height: 70px;
 $nav-background: #262626;
 $nav-font-color: #ffffff;
-$link-hover-color: #2581DC;
+$link-hover-color: #d69400;
 header {
     @include clearfix;
 }
@@ -44,9 +44,16 @@ nav {
             background: $nav-background;
             color: $nav-font-color;
             text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.3rem;
           &:hover {
             background: $link-hover-color;
             color: $nav-font-color;
+          }
+          &:focus {
+              color: white;
           }
           &:not(:only-child):after {
             padding-left: 4px;
@@ -76,6 +83,7 @@ nav {
         float: right;    
         line-height: 6.8rem;
         margin: 0;
+        padding: 0 1rem;
         li {
             display: inline-block;
             &:first-child {
