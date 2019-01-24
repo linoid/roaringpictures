@@ -550,3 +550,27 @@ function container_full_height_init(){
         $(".container-full-height").height($(window).height());
     })(jQuery);
 }
+
+(function($) { // Begin jQuery
+    $(function() { // DOM Ready
+
+        $('nav ul li > a:not(:only-child)').click(function(e) {
+            $(this).siblings('.nav-dropdown').toggle();
+            $('.nav-dropdown').not($(this).siblings()).hide();
+            e.stopPropagation();
+          });
+
+          $('html').click(function() {
+            $('.nav-dropdown, .nav-mobile').hide();
+          });
+
+          $('#nav-toggle').on('click', function() {
+            this.classList.toggle('active');
+          });
+
+          $('#nav-toggle').click(function() {
+            $('nav ul').toggle();
+          });
+      
+        });
+})(jQuery);
