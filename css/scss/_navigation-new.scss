@@ -62,9 +62,28 @@ nav {
         } // Dropdown list
         ul li {
             min-width: 190px;
-          a {
+          button {
             padding: 15px;
-            line-height: 20px;
+            width: 100%;
+            border: none;
+            background: $nav-background;
+            color: $nav-font-color;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            &:hover {
+              background: $link-hover-color;
+              color: $nav-font-color;
+            }
+            &:focus {
+                color: white;
+            }
+            &:not(:only-child):after {
+              padding-left: 4px;
+              content: ' ▾';
+            } 
           }
         }
       }
@@ -76,6 +95,11 @@ nav {
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     display: none;
+    li {
+        button {
+
+        }
+    }
 }
 
 .menu-socials {
@@ -176,3 +200,47 @@ nav {
         }
     }
 }
+
+/*Go to Top*/
+
+#back-to-top {
+    display: block;
+    z-index: 500;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    position: fixed;
+    bottom: -40px;
+    right: 20px;
+    line-height: 35px;
+    @include border-radius (50%);
+    @include transition (all 1s ease-in-out);
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  
+    & i {
+      @include transition (all 1s ease-in-out);
+    }
+  
+    & a {
+      width: 40px;
+      height: 40px;
+      display: block;
+      color: $heading-color;
+    }
+  
+    &.show {
+      bottom: 20px;
+    }
+  
+    &:hover {
+      background-color: $heading-color;
+    }
+  
+    &:hover i {
+      color: #fff;
+    }
+  }
+  

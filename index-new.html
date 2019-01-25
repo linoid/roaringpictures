@@ -68,12 +68,12 @@
       <ul class="nav-list">
         <li><a href="/index-new.html#intro">Home</a></li>
         <li><a href="#work">Works</a>
-         <ul class="nav-dropdown">
-           <li><button data-filter="*">Amazon Prime</button></li>
-           <li><button data-filter="promo-document">Promos & Mini Documentaries</button></li>
-           <li><button data-filter="nature">Nature & Beauty</button></li>
-           <li><button data-filter="politics">Politics & Government</button></li>
-           <li><button data-filter="films-videos">Original Films, Videos, & Series'</button></li>
+         <ul class="nav-dropdown button-group filter-button-group">
+           <li><button data-filter=".prime">Amazon Prime</button></li>
+           <li><button data-filter=".promo-document">Promos & Mini Documentaries</button></li>
+           <li><button data-filter=".nature">Nature & Beauty</button></li>
+           <li><button data-filter=".politics">Politics & Government</button></li>
+           <li><button data-filter=".films-videos">Original Films, Videos, & Series'</button></li>
          </ul>
        </li>
        <li><a href="#!">Contact</a></li>
@@ -201,7 +201,6 @@
             </div>-->
 
           </div> <!-- end row -->
-          <div id="demos-footage">
           <div class="row element-item headings promo-document show-all">
               <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center bottom-line">Promos & Mini Documentaries</h2>
@@ -1485,7 +1484,7 @@
               </div>
             </div> <!-- end post -->
                         </div>
-      </div>
+    </div>
     </section> <!-- end from blog -->
 
     <!-- Google Map 
@@ -1534,7 +1533,7 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
-  <script type="text/javascript" src="js/gmap3.js"></script>
+  <!-- <script type="text/javascript" src="js/gmap3.js"></script> -->
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -1545,41 +1544,41 @@
 
   <!-- Google Map -->
   <script type="text/javascript">
-    $(document).ready( function(){
+    // $(document).ready( function(){
 
-      var gmapDiv = $("#google-map");
-      var gmapMarker = gmapDiv.attr("data-address");
+    //   var gmapDiv = $("#google-map");
+    //   var gmapMarker = gmapDiv.attr("data-address");
 
-      gmapDiv.gmap3({
-        zoom: 16,
-        address: gmapMarker,
-        oomControl: true,
-        navigationControl: true,
-        scrollwheel: false,
-        styles: [
-          {
-          "featureType":"all",
-          "elementType":"all",
-            "stylers":[
-              { "saturation":"-70" }
-            ]
-        }]
-      })
-      .marker({
-        address: gmapMarker,
-        icon: "img/map_pin.png"
-      })
-      .infowindow({
-        content: "V Tytana St, Manila, Philippines"
-      })
-      .then(function (infowindow) {
-        var map = this.get(0);
-        var marker = this.get(1);
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      });
-    });
+    //   gmapDiv.gmap3({
+    //     zoom: 16,
+    //     address: gmapMarker,
+    //     oomControl: true,
+    //     navigationControl: true,
+    //     scrollwheel: false,
+    //     styles: [
+    //       {
+    //       "featureType":"all",
+    //       "elementType":"all",
+    //         "stylers":[
+    //           { "saturation":"-70" }
+    //         ]
+    //     }]
+    //   })
+    //   .marker({
+    //     address: gmapMarker,
+    //     icon: "img/map_pin.png"
+    //   })
+    //   .infowindow({
+    //     content: "V Tytana St, Manila, Philippines"
+    //   })
+    //   .then(function (infowindow) {
+    //     var map = this.get(0);
+    //     var marker = this.get(1);
+    //     marker.addListener('click', function() {
+    //       infowindow.open(map, marker);
+    //     });
+    //   });
+    // });
   </script>
 
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>

@@ -194,10 +194,16 @@ p {
   font-style: italic; }
 
 .heading {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
 
 .headings {
-  padding: 4rem 0 3rem; }
+  padding: 4rem 0 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
 
 .bottom-line:after {
   content: "";
@@ -315,9 +321,25 @@ nav {
           content: ' ▾'; }
       nav ul li ul li {
         min-width: 190px; }
-        nav ul li ul li a {
+        nav ul li ul li button {
           padding: 15px;
-          line-height: 20px; }
+          width: 100%;
+          border: none;
+          background: #262626;
+          color: #ffffff;
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.3rem; }
+          nav ul li ul li button:hover {
+            background: #d69400;
+            color: #ffffff; }
+          nav ul li ul li button:focus {
+            color: white; }
+          nav ul li ul li button:not(:only-child):after {
+            padding-left: 4px;
+            content: ' ▾'; }
 
 .nav-dropdown {
   position: absolute;
@@ -400,6 +422,46 @@ nav {
         transform: rotate(45deg); }
       #nav-toggle.active span:after {
         transform: rotate(-45deg); } }
+
+/*Go to Top*/
+#back-to-top {
+  display: block;
+  z-index: 500;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 22px;
+  position: fixed;
+  bottom: -40px;
+  right: 20px;
+  line-height: 35px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 1px 1.732px 12px 0px rgba(0, 0, 0, 0.14), 1px 1.732px 3px 0px rgba(0, 0, 0, 0.12); }
+  #back-to-top i {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  #back-to-top a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #111; }
+  #back-to-top.show {
+    bottom: 20px; }
+  #back-to-top:hover {
+    background-color: #111; }
+  #back-to-top:hover i {
+    color: #fff; }
 
 /*-------------------------------------------------------*/
 /* Content Home

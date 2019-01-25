@@ -604,6 +604,21 @@ function container_full_height_init(){
                 }
             }
         });
-      
+        let $grid = $('.grid').isotope({
+            // options
+        });
+        $('.filter-button-group').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+
+        $(window).scroll(function(event){
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+                $("#back-to-top").addClass("show");
+            } else {
+                $("#back-to-top").removeClass("show");
+            }
+        });
     });
 })(jQuery);
